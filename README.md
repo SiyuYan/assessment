@@ -1,6 +1,3 @@
-# nightwatch-cucumber-example
-Example for [`nightwatch-cucumber`](https://github.com/mucsi96/nightwatch-cucumber) usage
-
 ## Usage
 
 ```

@@ -1,6 +1,7 @@
-var seleniumServer = require('selenium-server');
-var chromedriver = require('chromedriver');
-var geckodriver = require('geckodriver');
+"use strict";
+const seleniumServer = require('selenium-server');
+const chromedriver = require('chromedriver');
+const geckodriver = require('geckodriver');
 require('nightwatch-cucumber')({
     cucumberArgs: ['--require', 'step_definitions', '--format', 'node_modules/cucumber-pretty', '--format', 'json:reports/cucumber.json', 'features']
 });

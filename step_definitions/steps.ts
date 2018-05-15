@@ -1,6 +1,5 @@
-// tslint:disable-next-line:no-var-requires
 const {client} =require('nightwatch-cucumber');
-import {Given, Then, When} from 'cucumber'
+const {Given, Then, When} =require('cucumber');
 Given(/^I open Google`s search page$/, () => {
     return client
         .url('http://google.com');

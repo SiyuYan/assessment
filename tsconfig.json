@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "jsx": "react",
+    "rootDir": ".",
+    "removeComments": true,
+    "declaration": false,
+    "importHelpers": true,
+    "pretty": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    /* Source Map Options */
+    "sourceMap": false,
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules/*"
+  ]
+}

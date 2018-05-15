@@ -1,0 +1,5 @@
+.vscode
+node_modules
+reports
+selenium-debug.log
+.idea/

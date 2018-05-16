@@ -4,7 +4,7 @@
   "description": "",
   "main": "nightwatch.conf.js",
   "scripts": {
-    "e2e-test": "nightwatch -c config/nightwatch.conf.ts",
+    "e2e-test": "tsc nightwatch",
     "e2e-test:chrome": "npm run e2e-test -- --env chrome",
     "e2e-test:firefox": "npm run e2e-test -- --env firefox",
     "debug": "node --inspect-brk node_modules/.bin/nightwatch --env chrome"

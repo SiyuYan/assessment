@@ -1,7 +1,11 @@
 export const config = {
-  circleLife: {
-    'login text': 'login',
-  },
-  facebook: {},
+    circleLife: {
+        'loginUrl': 'login',
+        'homeUrl': 'plan'
+    },
+    facebook: {
+        'loginUrl': 'login',
+        'homeUrl': 'welcome'
+    },
 };
 

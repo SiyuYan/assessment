@@ -4,7 +4,8 @@
   "description": "",
   "main": "nightwatch.conf.js",
   "scripts": {
-    "e2e-test": "tsc && nightwatch",
+    "e2e-circleLife": "tsc && case=circleLife nightwatch features/circlelifeLogin.feature",
+    "e2e-facebook": "tsc && case=facebook nightwatch features/facebookLogin.feature",
     "e2e-test:firefox": "npm run e2e-test -- --env firefox",
     "debug": "node --inspect-brk node_modules/.bin/nightwatch --env chrome"
   },

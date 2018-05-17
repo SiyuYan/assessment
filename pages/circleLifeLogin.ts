@@ -1,17 +1,11 @@
-const homePageCommands = {
+import {fillForm} from "../utils/commonFunction";
+const circleLifeCommands = {
   fillForm,
 };
 
-function fillForm(email: string, password: string) {
-  this.setValue('@userEmail', email)
-    .setValue('@passWord', password)
-    .click('@submit')
-    .api.pause(2000);
-}
-
 
 module.exports = {
-  commands: [homePageCommands],
+  commands: [circleLifeCommands],
   url() {
     return this.api.launchUrl;
   },

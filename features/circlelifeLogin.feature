@@ -5,10 +5,10 @@ Feature: Circle Life
 
 @login
 Scenario Outline: Login Circle Life
-  Given a user open Circle Life login page
+  Given a user open login page
   When login with users "<Email>" and "<PassWord>"
   Then login "<LoginResult>"
   Examples:
-      | Email  | PassWord  | LoginResult |
-      | syyan@thoughtworks.com | 2739393ysy | successful      |
-      | syyan@thoughtworks.com | 111111 |  failed |
+      | Email                  | PassWord   | LoginResult |
+      | syyan@thoughtworks.com | 111111     |  failed     |
+      | syyan@thoughtworks.com | 2739393ysy | successful  |

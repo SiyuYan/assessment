@@ -1,8 +1,5 @@
-import { findElementLocation } from '../utils/helper';
-
 const homePageCommands = {
   fillForm,
-  findElementLocation,
 };
 
 function fillForm(email: string, password: string) {

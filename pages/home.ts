@@ -5,11 +5,11 @@ const homePageCommands = {
   findElementLocation,
 };
 
-function fillForm() {
-   this.setValue('@userEmail', 'syyan@thoughtworks.com')
-    .setValue('@passWord', '2739393ysy')
+function fillForm(email: string, password: string) {
+  this.setValue('@userEmail', email)
+    .setValue('@passWord', password)
     .click('@submit')
-     .waitForElementNotPresent('@submit', 2000);
+    .api.pause(2000);
 }
 
 

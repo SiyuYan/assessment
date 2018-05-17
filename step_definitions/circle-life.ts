@@ -1,19 +1,20 @@
 const {client} = require('nightwatch-cucumber');
 const {Given, Then, When} = require('cucumber');
+let home = client.page.home();
 
-Given('a user open Circle Life home page', function () {
-  return client.url('https://pages.circles.life/')
+Given('a user open Circle Life login page', function () {
+  home.navigate();
+  client.assert.urlContains('login');
+
 });
-When('he selects to login and got to login page', function () {
-  let home = client.page.home();
-  return home.navigate().fillForm()
-  .fillForm('syyan@thoughtworks.com', '2739393ysy');
+When('login with users {string} and {string}', function (email: string, password: string) {
+  return home.fillForm(email, password)
 });
-When('he input valid email', function () {
-  return this;
-  // client.setValue('@userEmail', 'nightwatch@test.com')
-  //   .setValue('@passWord', 'Password1')
-});
-Then('he login successfully', function () {
-  return client.assert.urlContains('plan');
+Then('login {string}', function (result: string) {
+  if (result === 'successful') {
+    return client.assert.urlContains('plan');
+  }
+  else {
+    return client.assert.urlNotContains('plan');
+  }
 });

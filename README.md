@@ -101,7 +101,11 @@ Test Scenario: Validate function after logged in
 
 ## 3. Execution command
 
+Login for Circles.Life 
+
 ```
 npm i
+
+npm run e2e-test
 
 ```

@@ -1,23 +1,19 @@
-const {client} =require('nightwatch-cucumber');
-const {Given, Then, When} =require('cucumber');
-Given(/^I open Google`s search page$/, () => {
-    return client
-        .url('http://google.com');
-});
+const {client} = require('nightwatch-cucumber');
+const {Given, Then, When} = require('cucumber');
 
-Given(/^I open DuckDuckGo search page$/, () => {
-    return client
-        .url('https://duckduckgo.com/');
+Given('a user open Circle Life home page', function () {
+  return client.url('https://pages.circles.life/')
 });
-
-Then(/^the title is "(.*?)"$/, (text: string) => {
-    return client.assert.title(text);
+When('he selects to login and got to login page', function () {
+  let home = client.page.home();
+  return home.navigate().fillForm()
+  .fillForm('syyan@thoughtworks.com', '2739393ysy');
 });
-
-Then(/^the Google search form exists$/, () => {
-    return client.assert.visible('input[name="q"]');
+When('he input valid email', function () {
+  return this;
+  // client.setValue('@userEmail', 'nightwatch@test.com')
+  //   .setValue('@passWord', 'Password1')
 });
-
-Then(/^the DuckDuckGo search form exists$/, () => {
-    return client.assert.visible('input[name="q"]');
+Then('he login successfully', function () {
+  return client.assert.urlContains('plan');
 });

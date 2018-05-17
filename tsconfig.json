@@ -14,7 +14,8 @@
     "sourceMap": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
-    "allowJs": false
+    "allowJs": false,
+    "noImplicitThis": false
   },
   "exclude": [
     "node_modules/*"

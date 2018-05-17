@@ -4,6 +4,7 @@ const {client} = require('nightwatch-cucumber');
 const {Given, Then, When} = require('cucumber');
 let login: any, loginUrl: any, homeUrl: any;
 
+let home = client.page.facebookHome();
 Given('a user open login page', function () {
 
     if (process.env.case === 'circleLife') {
@@ -30,4 +31,14 @@ Then('login {string}', function (result: string) {
     else {
         return client.assert.urlNotContains(homeUrl);
     }
+});
+
+When('select news feed and post one comment', function () {
+    return home
+        .selectNewsFeed()
+        .addComment('test');
+});
+
+Then('view the comment published', function () {
+    return home.validateCommentsDisplay();
 });

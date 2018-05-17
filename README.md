@@ -101,7 +101,9 @@ Test Scenario: Validate function after logged in
 
 ## 3. Execution command
 
-Login for Circles.Life 
+* Login for Circles.Life
+* Login for Facebook
+
 
 ```
 npm i

@@ -12,5 +12,5 @@ Scenario Outline: Login Circle Life
   Then validate email address "<Email>"
   Examples:
       | Email                  | PassWord   | LoginResult |
-      | syyan@thoughtworks.com | 111111     |  failed     |
+#      | syyan@thoughtworks.com | 111111     |  failed     |
       | syyan@thoughtworks.com | 2739393ysy | successful  |

@@ -12,7 +12,7 @@ function selectMyAccount() {
 
 function validateEmail(email: string) {
   return this.waitForElementVisible('@email', TIMEOUT)
-    .assert.containsText('@email', email);
+    .assert.value('@email', email);
 }
 
 module.exports = {

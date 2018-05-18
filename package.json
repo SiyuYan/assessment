@@ -6,8 +6,9 @@
   "scripts": {
     "e2e-circleLife": "tsc && case=circleLife nightwatch features/circlelifeLogin.feature",
     "e2e-facebook": "tsc && case=facebook nightwatch features/facebookLogin.feature",
-    "e2e-test:firefox": "npm run e2e-test -- --env firefox",
-    "debug": "node --inspect-brk node_modules/.bin/nightwatch --env chrome"
+    "e2e-test:firefox": "npm run e2e-test --env firefox",
+    "e2e-report": "node utils/reporter.js",
+    "e2e": "npm-run-all e2e-circleLife e2e-report --continue-on-error"
   },
   "author": "Siyu Yan",
   "dependencies": {
@@ -21,6 +22,12 @@
     "typescript": "2.4.2"
   },
   "devDependencies": {
-    "@types/chromedriver": "^2.38.0"
+    "@types/chromedriver": "^2.38.0",
+    "@types/lodash": "4.14.72",
+    "@types/nightwatch": "^0.9.4",
+    "cucumber-html-reporter": "^4.0.2",
+    "lodash": "^4.17.10",
+    "nightwatch-html-reporter": "^2.0.5",
+    "npm-run-all": "^4.1.3"
   }
 }

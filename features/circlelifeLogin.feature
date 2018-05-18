@@ -8,6 +8,8 @@ Scenario Outline: Login Circle Life
   Given a user open login page
   When login with users "<Email>" and "<PassWord>"
   Then login "<LoginResult>"
+  When select my account
+  Then validate email address "<Email>"
   Examples:
       | Email                  | PassWord   | LoginResult |
       | syyan@thoughtworks.com | 111111     |  failed     |

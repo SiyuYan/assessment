@@ -1,11 +1,11 @@
 export const config = {
     circleLife: {
-        'loginUrl': 'login',
-        'homeUrl': 'plan'
+        'loginUrlText': 'login',
+        'homeUrlText': 'plan'
     },
     facebook: {
-        'loginUrl': 'login',
-        'homeUrl': 'welcome'
+        'loginUrlText': 'login',
+        'homeUrlText': 'welcome'
     },
 };
 

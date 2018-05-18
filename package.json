@@ -8,7 +8,8 @@
     "e2e-facebook": "tsc && case=facebook nightwatch features/facebookLogin.feature",
     "e2e-test:firefox": "npm run e2e-test --env firefox",
     "e2e-report": "node utils/reporter.js",
-    "e2e": "npm-run-all e2e-circleLife e2e-report --continue-on-error"
+    "e2e": "npm-run-all e2e-circleLife e2e-report --continue-on-error",
+    "e2e-test": "npm-run-all e2e-facebook e2e-report --continue-on-error"
   },
   "author": "Siyu Yan",
   "dependencies": {

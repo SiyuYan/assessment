@@ -101,13 +101,14 @@ Test Scenario: Validate function after logged in
 
 ## 3. Execution command
 
-* Login for Circles.Life
-* Login for Facebook
+* Login for Circles.Life and validate address value
+* Login for Facebook and post one comment
 
 
 ```
 npm i
 
-npm run e2e-test
+npm run e2e (run with headless chrome desktop view and generate reporter)
+npm run e2e:firefox (run with firefox desktop view)
 
 ```

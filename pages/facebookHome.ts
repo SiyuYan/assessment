@@ -27,7 +27,7 @@ function validateCommentsDisplay() {
 module.exports = {
     commands: [facebookHomeCommands],
     url() {
-        return "";
+        return "https://www.facebook.com/";
     },
     elements: {
         newsFeed: 'a[title="News Feed"]',

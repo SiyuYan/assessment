@@ -104,7 +104,14 @@ Test Scenario: Validate function after logged in
 * Login for Circles.Life and validate address value
 * Login for Facebook and post one comment
 
+The code is writing with nightWatch/selenium and cucumber(BDD).
 
+* test reporter : /reporters/report.html
+* test screenshots: /screenshots/{step name}
+
+When test failed, the screenshots will attached to the report of the step
+
+### Command
 ```
 npm i
 

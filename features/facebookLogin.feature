@@ -12,5 +12,4 @@ Feature: Facebook
     Then view the comment published
     Examples:
       | website  | Email               | PassWord   | LoginResult |
-  #    |facebook  | 18200289607@163.com | 111111     |  failed      |
       | facebook | 18200289607@163.com | 2739393ysy | successful  |

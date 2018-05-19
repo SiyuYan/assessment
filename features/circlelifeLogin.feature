@@ -12,5 +12,4 @@ Feature: Circle Life
     Then validate email address "<Email>"
     Examples:
       | website    | Email                  | PassWord   | LoginResult |
- #    | circleLife | syyan@thoughtworks.com | 111111     |  failed     |
       | circleLife | syyan@thoughtworks.com | 2739393ysy | successful  |
